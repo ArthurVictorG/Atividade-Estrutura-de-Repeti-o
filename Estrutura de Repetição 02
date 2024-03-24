@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    String nome, senha;
+    System.out.print("Digite seu nome: ");
+    nome = teclado.nextLine();
+    System.out.print("Digite sua senha: ");
+    senha = teclado.nextLine();
+    //Verificar se a senha e nome de usuário são iguais
+    if (nome.equals(senha));{
+      System.out.println("Erro! A senha não pode ser igual ao nome de usuário!");
+      System.out.print("Digite seu nome: ");
+      nome = teclado.nextLine();
+      System.out.print("Digite sua senha: ");
+      senha = teclado.nextLine();
+      while (nome.equals(senha));
+    }
