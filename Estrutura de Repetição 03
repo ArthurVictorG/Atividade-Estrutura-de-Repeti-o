@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class Main {
+  public static void main(String[] args) {
+  Scanner teclado = new Scanner(System.in);
+    String nome;
+    int idade;
+    char estado_civil,sexo;
+    double salario;
+    
+    System.out.println("Digite seu nome: ");
+    nome = teclado.nextLine();
+    while (nome.length() <= 3);
+
+    System.out.println("Digite sua idade: ");
+    idade = teclado.nextInt();
+    while (idade < 0 || idade > 150);
+
+    System.out.println("Digite seu salário: ");
+    salario = teclado.nextDouble();
+    while (salario <= 0);
+
+    System.out.println("Digite seu sexo: ");
+    sexo = teclado.next().charAt(0);
+    while (sexo != 'f' && sexo != 'm');
+   //Estado Civil: 's', 'c', 'v', 'd';
+    System.out.println("Digite seu estado civil: ");
+    estado_civil = teclado.next().charAt(0);
+    while (estado_civil != 's' && estado_civil != 'c' && estado_civil != 'v' && estado_civil != 'd');
+    
+           
+  }
