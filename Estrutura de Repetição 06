@@ -1,0 +1,14 @@
+
+public class Main {
+  public static void main(String[] args) {
+    for (int A = 1; A <= 20; A++) {
+        System.out.println(A);
+    }
+    System.out.println("\nNúmeros um ao lado do outro:");
+    for (int A = 1; A <= 20; A++) {
+        System.out.print(A + " ");
+    }
+  }
+
+
+}
