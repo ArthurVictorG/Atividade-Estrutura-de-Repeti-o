@@ -1,0 +1,16 @@
+
+public class Main {
+  public static void main(String[] args) {
+
+    int A = 80000, B = 200000, anos = 0;
+    double taxaA = 0.03, taxaB = 0.015;
+    while (A < B) {
+      A += A * taxaA;
+      B += B * taxaB;
+      anos++;
+    }
+    System.out.println("A população do país A ultrapassará a população do país B em " + anos + " anos.");
+
+  }
+
+}
