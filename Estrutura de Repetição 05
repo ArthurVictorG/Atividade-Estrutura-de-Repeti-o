@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+   do {
+    int A, B, anos = 0;
+    double taxaA, taxaB;
+   System.out.println("Digite a população do país A: ");
+
+    A = teclado.nextInt();
+    while (A <= 0){
+    A = teclado.nextInt();
+    }
+    
+    System.out.println("Digite a taxa de crescimento do país A: ");
+    taxaA = teclado.nextDouble();
+    while (taxaA <= 0){
+      taxaA = teclado.nextDouble();
+    }
+    
+    System.out.println("Digite a população do país B:");
+    B = teclado.nextInt();
+    while (B <= 0){
+      B = teclado.nextInt();
+    }
+    System.out.println("Digite a taxa de crescimento do país B:");
+    taxaB = teclado.nextDouble();
+    while (taxaB <= 0){
+      taxaB = teclado.nextDouble();
+    }
+    while (A < B){
+        A += (A * taxaA);
+        B += (B * taxaB);
+        anos++;
+  System.out.println("Número de anos necessários para A ultrapassar B: " + anos);
+
+    }
+      
+    
+    
+  }
+
+
+}
