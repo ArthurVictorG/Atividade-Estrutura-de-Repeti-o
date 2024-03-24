@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite a quantidade de notas: ");
+    int n = sc.nextInt();
+    int i = 0;
+    double nota = 0;
+    double media = 0;
+    while (i < n) {
+      System.out.println("Digite a nota: ");
+      nota = sc.nextDouble();
+      media += nota;
+      i++;
+    }
+    media = media / n;
+    System.out.println("A média é: " + media);
+  }
+
+
+}
